@@ -1,2 +1,0 @@
-class Gossip < ApplicationRecord
-end

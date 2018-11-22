@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require 'faker'
+
+Email.all.destroy_all
+
+10.times do
+  Email.create(object: Faker::Food.vegetables, body: Faker::Food.description, read: false)
+end

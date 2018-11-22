@@ -1,0 +1,5 @@
+<li>
+  <%= email.title %>
+  <%= button_to "Show body", @email, remote: true %>
+  <%= link_to "Delete email", @email, remote: true, method: :destroy %>
+</li>
